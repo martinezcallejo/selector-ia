@@ -1,0 +1,25 @@
+{
+  "contenido": [
+    {
+      "name": "ChatGPT",
+      "url": "https://chat.openai.com",
+      "desc": "Versátil y rápido"
+    },
+    {
+      "name": "Claude",
+      "url": "https://claude.ai",
+      "desc": "Mejor redacción larga"
+    }
+  ],
+  "imagenes": [
+    {
+      "name": "Midjourney",
+      "url": "https://midjourney.com",
+      "desc": "Imágenes creativas"
+    }
+  ],
+  "video": [],
+  "codigo": [],
+  "productividad": [],
+  "ideas": []
+}
