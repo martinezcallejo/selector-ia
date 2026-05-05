@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AI Selector</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- iPhone PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <h1>¿Qué quieres hacer hoy?</h1>
+
+  <div class="grid">
+    <button class="card" data-cat="contenido">✍️ Crear contenido</button>
+    <button class="card" data-cat="imagenes">🎨 Crear imágenes</button>
+    <button class="card" data-cat="video">🎬 Crear vídeo</button>
+    <button class="card" data-cat="codigo">💻 Programar</button>
+    <button class="card" data-cat="productividad">📊 Organizar</button>
+    <button class="card" data-cat="ideas">💡 Ideas</button>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modal-title"></h2>
+      <div id="results"></div>
+      <button onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+
+<script src="app.js"></script>
+</body>
+</html>
