@@ -20,12 +20,13 @@ function showResults(cat) {
   title.innerText = cat.toUpperCase();
 
   data[cat].forEach(tool => {
-    const div = document.createElement('div');
-    div.innerHTML = `
-      <p><strong>${tool.name}</strong> - ${tool.desc}</p>
-      <a href="${tool.url}" target="_blank">Abrir</a>
-      <hr>
-    `;
+   const div = document.createElement('div');
+div.className = 'tool';
+div.innerHTML = `
+  <strong>${tool.name}</strong><br>
+  <span>${tool.desc}</span><br>
+  <a href="${tool.url}" target="_blank">Abrir →</a>
+`;
     resultsDiv.appendChild(div);
   });
 
